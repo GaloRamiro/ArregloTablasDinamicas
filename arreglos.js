@@ -66,3 +66,17 @@ function moverHaciaIzquierda(valorIndice) {
   pintarArregloDerecha();
   pintarTablaIzquierda();
 }
+
+function moverTodoIzquierda(){
+ arregloIzquierda.push(...arregloDerecha);
+ arregloDerecha=[];
+ pintarArregloDerecha();
+ pintarTablaIzquierda();
+
+}
+function moverTodoDerecha(){
+  arregloDerecha.push(...arregloIzquierda);
+  arregloIzquierda=[];
+  pintarArregloDerecha();
+  pintarTablaIzquierda();
+}
