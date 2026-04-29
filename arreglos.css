@@ -80,6 +80,18 @@ button:hover {
 .tabla-contenedor {
     width: 50%;
     overflow-x: auto;
+    /* Estas líneas centran el contenido y el botón */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    /* Este es el espacio entre la tabla y el botón */
+    gap: 20px;
+}
+/* Para que las tablas sigan ocupando el ancho completo del contenedor */
+.tabla-contenedor table {
+    width: 100%;
+    margin-bottom: 5px; /* Refuerzo de espacio opcional */
 }
 
 h2 {
