@@ -33,21 +33,15 @@
               <tr>
                 <td>-</td>
                 <td>
-                  <button
-                    class="btn-eliminar"
-                    
-                  >
-                    Eliminar
-                  </button>
+                  <button class="btn-eliminar">Eliminar</button>
                 </td>
                 <td>
-                  <button class="btn-mover">
-                    ➜
-                  </button>
+                  <button class="btn-mover">➜</button>
                 </td>
               </tr>
             </tbody>
           </table>
+          <button onclick="agregarEdad()">Mover Todo ➜</button>
         </div>
 
         <div class="tabla-contenedor">
@@ -60,8 +54,19 @@
                 <th>Eliminar</th>
               </tr>
             </thead>
-            <tbody id="tablaDerecha"></tbody>
+            <tbody id="tablaDerecha">
+              <tr>
+                <td>
+                  <button class="btn-mover">⬅</button>
+                </td>
+                <td>-</td>
+                <td>
+                  <button class="btn-eliminar">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
           </table>
+          <button onclick="agregarEdad()">⬅ Mover Todo</button>
         </div>
       </section>
     </main>
